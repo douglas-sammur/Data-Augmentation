@@ -1,7 +1,5 @@
 # Data Augmentation Script
 
-## Overview
-
 This Python script performs data augmentation on a dataset using the Albumentations library. The script reads images and their corresponding labels, applies specified augmentation methods, and saves the augmented images and labels.
 
 ## Requirements
@@ -12,13 +10,6 @@ Install the required libraries using the provided `requirements.txt` file:
 pip install -r requirements.txt
 ```
 
-### `requirements.txt`
-
-```
-opencv-python
-albumentations
-pybboxes
-```
 
 ## Script Usage
 
@@ -42,10 +33,6 @@ python main.py -i <input_folder> -o <output_folder> -c <classes_file> -a <albume
 ```bash
 python main.py -i data/input -o data/output -c data/classes.txt -a data/albumentations.json -t aug -s True
 ```
-
-### Main Block
-
-The script execution starts here. It reads the command-line arguments, processes each image in the input directory, applies the augmentations, and saves the results.
 
 ## Notes
 
