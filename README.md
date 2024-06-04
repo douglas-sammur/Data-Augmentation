@@ -1,6 +1,11 @@
 # Data Augmentation Script
 
-This Python script performs data augmentation on a dataset using the Albumentations library. The script reads images and their corresponding labels, applies specified augmentation methods, and saves the augmented images and labels.
+This Python script performs data augmentation on a dataset using the Albumentations library. The script reads images and their corresponding labels, applies specified augmentation methods, and saves the augmented images and labels. For example:
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="data/main-ds/images/00001.jpg" alt="Contour Detector Results" width="45%">
+    <img src="data/result-ds/images/00001_aug_custom.png" alt="Contour Detector Results" width="45%">
+</div>
 
 ## Requirements
 
