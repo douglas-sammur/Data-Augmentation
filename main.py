@@ -80,7 +80,9 @@ def save_labels(transformed_bboxes, label_dir, label_name):
     label_path = os.path.join(label_dir, label_name)
     with open(label_path, 'w') as output_file:
         for bbox in transformed_bboxes:
-            bbox_str = str(bbox).replace(',', ' ').replace('[', '').replace(']', '')
+            class_idx = int(bbox[0])
+            bbox_values = [round(float(value), 6) for value in bbox[1:]]
+            bbox_str = f"{class_idx} " + ' '.join(map(str, bbox_values))
             output_file.write(bbox_str + '\n')
 
 
